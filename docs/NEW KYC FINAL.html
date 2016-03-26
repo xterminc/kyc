@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en" xml:lang="en">
+<head>
+<title>SWBBL KYC</title>	
+
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <!-- <link rel="stylesheet" href="C:\Users\amrsuebdi\Documents\bootstrap-3.3.6\bootstrap-3.3.6-dist\css\bootstrap.min.css"> 
+ <script src="C:\Users\amrsuebdi\Documents\bootstrap-3.3.6\bootstrap-3.3.6-dist\js\jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+<!-- 
+<link rel="stylesheet" type="text/css" href="C:\Users\amrsuebdi\Desktop\NEW KYC FINAL\main.css"> -->
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <img align="middle"  src="logo.png" >
+  <h4 align="center"style="color:blue">KNOW YOUR CUSTOMER (KYC) APPLICATION FORM</h4>  
+<!-- Javascript-->
+ <script>
+			$(document).ready(function(){
+
+				$(".nav-pills a").click(function(){					
+				    $(this).tab('show'); 
+				 });
+
+				 $(".btnNext").click(function(){				 	
+					 $('.nav-pills > .active').next('li').find('a').trigger('click');
+				});
+
+				$(".btnPrevious").click(function(){
+					 $('.nav-pills > .active').prev('li').find('a').trigger('click');
+				});
+
+			
+		});		
+</script>
+
+</head>
+<body bgcolor="#E6E6FA">
+<form >
+	<div class="container">
+         <div  class="panel panel-primary">						
+			<ul class="nav nav-pills">
+			  <li class="active"><a href="#tab1">Branch/Center Info</a></li>
+			  <li><a href="#tab2">Personal Info</a></li>
+			  <li><a href="#tab3">Address</a></li>
+			  <li><a href="#tab4">Family Description</a></li>
+			  <li><a href="#tab5">Income/Expense Details</a></li>
+			  <li><a href="#tab6">House Details</a></li>
+			  <li><a href="#tab7">Livestock Details</a></li>
+			  <li><a href="#tab8">Land Details</a></li>
+			</ul>
+		</div>		
+		<!--Tab1 Start -->
+		<div class="tab-content">
+			<div id="tab1" class="tab-pane fade in active">
+				<div class="panel panel-primary" >
+					<div class="panel-body" >				
+					<div class="form-group">
+						 	<label for="date_picker">Today Date:</label>	
+						 	<input type="date" class="form-control" id="datepicker">
+					 </div>	
+			   		 <div class="btn-group">
+			   		 	<button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown">
+			     		Branch 
+			     	 	<span class = "caret"></span>  
+			   			</button>
+					   	<ul class="dropdown-menu">
+						    <li><a href="#">Area Ghataghar</a></li>
+						    <li><a href="#">Nagarkot</a></li>
+						    <li><a href="#">Thimi</a></li>
+						</ul>	
+			   		 </div>
+			   		 <hr>
+			   		 <div class="form-group">
+			      		 <div class="col-md-3"><label>Center Code</label><input type="text" class="form-control" id="centercode" placeholder=""></div>
+			     		 <div class="col-md-3"><label>Center Name</label><input type="text" class="form-control" id="cetnername" placeholder=""></div>
+			      		 <div class="col-md-3"><label>Group Code</label><input type="text" class="form-control" id="groupcode" placeholder=""></div>
+			     		 <div class="col-md-3"><label>Member Code</label><input type="text" class="form-control" id="membercode" placeholder=""></div>
+			   		</div>
+				 </div>
+				 	 <div class="panel-footer" style="height:60px">				 	 	
+				 	 	<button id="next1" type="button" class="btn btn-primary btnNext" style="float: right;">Next</button>
+				 	 </div>
+				</div>
+				 </div>
+				<!--Tab1 Ending -->
+			
+				<!--Tab2 Start -->
+			<div id="tab2" class="tab-pane fade">
+				<div class="panel panel-primary" >
+				<div class="panel-body">			   		
+			   		<div class="form-group">
+			     		<div class="col-md-4"><label for="fname">First Name (पहिलो नाम  )*</label><input type="text" class="form-control" placeholder=""></div>
+			      		<div class="col-md-4"><label for ="mname">Middle Name (बीचको नाम ) </label><input type="text" class="form-control" placeholder=""></div>
+			     		<div class="col-md-4"><label for ="lname">Last Name (अन्तिम अर्थात् थर) *</label><input type="text" class="form-control" placeholder=""></div>
+			   		</div>
+			   		</div>
+
+			   		<div class="panel-body">
+			   		 <div class="form-group">
+			   			<div class="col-md-3"><label for="fhusband">Husband Name (पति नाम *)</label><input type="text" class="form-control" placeholder=""></div>
+			     		<div class="col-md-3"><label for="fhusband">Father (बाबुको नाम *)</label><input type="text" class="form-control" placeholder=""></div>
+			      		<div class="col-md-3"><label>Father-in-Law </label><input type="text" class="form-control" placeholder=""></div>
+			     		<div class="col-md-3"><label>Grand Father/Grandfather-in-law *</label><input type="text" class="form-control" placeholder=""></div>
+			   		</div>
+			   		</div>
+
+			   		<div class="panel-body">
+			   		<div class="form-group">
+				   		<div class="col-md-4"><label for ="nomineename">Beneficiary/Nominee Name*</label><input type="text" class="form-control" placeholder=""></div>
+				   		<div class="col-md-4"><label for ="nomineerelation">Beneficiary/Nominee Relation*</label><select name="nomineerelation" class="form-control beta">
+	            				<option value="H">Husband</option>
+	           					<option value="F">Father</option>
+	           					<option value="M">Mother</option>
+	           					<option value="B">Brother</option>
+	       					 </select>
+				   		</div>
+			   		</div>
+			   		</div>
+
+			   	<div class="panel-body"> 
+			   		<div class="form-group">
+			     		<div class="col-md-3"><label for="datepicker">Date Of Birth (वि.सं.मा :)*</label><input type="date" class="form-control" placeholder=""></div>			     		
+			      		<div class="col-md-3"><label>Current Age</label><input type="text" class="form-control" placeholder=""></div>			 <div class="col-md-3"><label class="control-label">Gender (लिङ्ग)</label>
+			       		<select name="gender" class="form-control beta">
+            				<option value="M">Male</option>
+           					<option value="F">Female</option>
+           					<option value="O">Others</option>
+       					 </select>
+    			 	 </div>
+			     	 <div class="col-md-3"><label class="control-label">Martial Status (वैवाहिक स्थिति )</label>
+			       		<select name="gender" class="form-control beta">
+            				<option value="M">Married</option>
+           					<option value="UM">Unmarried</option>
+           					<option value="W">Widow</option>
+       					 </select>
+    			  </div>
+    			 </div>
+    		</div>
+
+    			<div class="panel-body"> 
+			   		<div class="form-group">
+				     	<div class="col-md-3"><label class="control-label">Religion (धर्म)</label>
+				       		<select name="gender" class="form-control beta">
+	            				<option value="H">Hindu</option>
+	           					<option value="IS">Islam</option>
+	           					<option value="B">Buddhist</option>
+	           					<option value="C">Christian</option>
+	       					 </select>
+	    			  </div>
+    				  <div class="col-md-3"><label for ="datepicker">Member Registration Date*</label><input type="date" class="form-control" placeholder=""></div>   			   			  
+			     	<div class="col-md-3"><label>Ethnic Group (समूह/वर्ग)*</label><select name="district" class="form-control beta">
+            				<option value="K">Bhahimin</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select>
+       				</div>
+       			
+			     	<div class="col-md-3"><label>Caste (जात )*</label><select name="district" class="form-control beta">
+            				<option value="K">Brahimin</option>
+           					<option value="B">Sudra</option>
+           					<option value="L">Kasyap</option>
+       					 </select>
+       			   </div>
+       			  </div>
+       			</div>
+
+       			 <div class="panel-body"> 			
+			   		<div class="form-group">
+			     		<div class="col-md-3"><label>Nationality  *</label><select name="Nationality" class="form-control beta">
+            				<option value="N">Neplese</option>
+           					<option value="O">Others</option>
+       					 </select>
+       			    	</div>
+       			    	<div class="col-md-3"><label>Email Address (ईमेल )</label><input type="email" class="form-control" placeholder=""></div>   	
+       			  	  </div>
+			    </div>
+
+
+			    <div class="panel-body"> 
+			    <h4>Citizenship (नागरिकता)</h4>
+			   	<div class="form-group">
+			     	<div class="col-md-3"><label>Citizenship No. (नागरिकता नं.)*</label><input type="text" class="form-control" placeholder=""></div>
+			     	<div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला) *</label><select name="district" class="form-control beta">
+            				<option value="K">Kathmandu</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select></div>
+			     	<div class="col-md-3"><label>Issued Date (जारी मिति) *</label><input type="date" class="form-control"></div>
+			     	<div class="col-md-2"><span class="btn btn-default btn-file">Citizenship Photo (फोटो)<input type="file"></span></div>
+			   	</div>
+			   	</div>
+			   	<!--Education panel Ending -->
+       		 <div class="panel-body"> 
+       		   <h4>Education Qualification (शैक्षिक योग्यता)</h4>
+       			  	<div class="form-group">
+			     <div class="col-md-3"><label>General </label><select name="Education" class="form-control beta">
+            				<option value="N">Masters</option>
+           					<option value="O">Bachlors</option>
+       					 </select></div>
+       				  <div class="col-md-3"><label>Technical </label><select name="Education" class="form-control beta">
+            				<option value="M">ME/MSC/MBA/MSCIT</option>
+           					<option value="O">BE/BBA/BSCCSIT/BSCIT</option>
+           					<option value="O">IE</option>
+       					 </select>
+  				  </div>
+  				  </div>
+  				  </div><!--Education panel Ending -->
+
+  				 <div class="panel-body"> 
+			    <h4>Training/Vocational Skills (तालिम)</h4>
+			   	<div class="form-group">
+			     	<div class="col-md-3"><label>Name of Institute (तालिम दिने संस्था)</label><input type="text" class="form-control" placeholder="Name of Institute"></div>
+			     	<div class="col-md-3"><label>Training Name (तालिम)</label><input type="text" class="form-control" placeholder="Training Name"></div>
+			     	<div class="col-md-3"><label>Issued Period (अवधि )</label><input type="text" class="form-control" placeholder="Duration of Training"></div>
+			     	<div class="col-md-2"><span class="btn btn-default btn-file">Certificate Photo (फोटो) <input type="file"></span></div>
+			   	</div>
+			   	</div>
+
+			   	 <div class="panel-body"> 
+			    <h4>Passport</h4>
+			   	<div class="form-group">
+			     	<div class="col-md-3"><label>Passport No.*</label><input type="text" class="form-control" placeholder="Passport No."></div>
+			     	<div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला) *</label><select name="district" class="form-control beta">
+            				<option value="K">Kathmandu</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select></div>
+			     	<div class="col-md-3"><label>Issued Date (जारी मिति)*</label><input type="date" class="form-control"></div>
+			     	<div class="col-md-2"><span class="btn btn-default btn-file">Passport Photo (फोटो)<input type="file"></span></div>
+			   	</div>
+			   	</div>
+
+			   	 <div class="panel-body"> 
+			    <h4>Driving License</h4>
+			   	<div class="form-group">
+			     	<div class="col-md-3"><label>License No.*</label><input type="text" class="form-control" placeholder="License No."></div>
+			     	<div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला) *</label><select name="district" class="form-control beta">
+            				<option value="K">Kathmandu</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select></div>
+			     	<div class="col-md-3"><label>Issued Date (जारी मिति)*</label><input type="date" class="form-control"></div>
+			     	<div class="col-md-2"><span class="btn btn-default btn-file">Driving License Photo (फोटो)<input type="file"></span></div>
+			   	</div>
+			   	</div>
+
+			   	<div class="panel-body"> 
+			    <h4>Marriage Certificate</h4>
+			   	<div class="form-group">
+			     	<div class="col-md-3"><label>Registration No.*</label><input type="text" class="form-control" placeholder="Registration No."></div>
+			     	<div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला) *</label><select name="district" class="form-control beta">
+            				<option value="K">Kathmandu</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select></div>
+			     	<div class="col-md-3"><label>Issued Date (जारी मिति)*</label><input type="date" class="form-control"></div>
+			     	<div class="col-md-2"><span class="btn btn-default btn-file">Marriage Certificate Photo (फोटो)<input type="file"></span></div>
+			   	</div>
+			   	</div>
+
+			   	<div class="panel-body"> 
+			    <h4>Birth Certificate</h4>
+			   	<div class="form-group">
+			     	<div class="col-md-3"><label>Registration No.*</label><input type="text" class="form-control" placeholder=""></div>
+			     	<div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला) *</label><select name="district" class="form-control beta">
+            				<option value="K">Kathmandu</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select></div>
+			     	<div class="col-md-3"><label>Issued Date (जारी मिति) *</label><input type="date" class="form-control"></div>
+			     	<div class="col-md-2"><span class="btn btn-default btn-file">Birth Certification Photo (फोटो)<input type="file"></span></div>
+			   	</div>
+			   	</div>
+
+			   	<div class="panel-body"> 
+			    <h4>Electricity/Water Bill</h4>
+			   	<div class="form-group">
+			     	<div class="col-md-3"><label>Bill No.*</label><input type="text" class="form-control" placeholder="BillNo"></div>
+			     	<div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला)*</label><select name="district" class="form-control beta">
+            				<option value="K">Kathmandu</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select></div>
+			     	<div class="col-md-3"><label>Issued Date (जारी मिति) *</label><input type="date" class="form-control"></div>
+			     	<div class="col-md-2"><span class="btn btn-default btn-file">Electricity/Water Photo (फोटो) <input type="file"></span></div>
+			   	</div>
+			   	</div>
+
+			   	<div class="panel-body"> 
+			   	<div class="form-group">
+			   	<div class="col-md-3"><span class="btn btn-default btn-file">Digital Finger Print (फोटो)<input type="file"></span></div>
+			   	<div class="col-md-3"><span class="btn btn-default btn-file">Digital Signature (फोटो)<input type="file"></span></div>
+			   	</div>
+			   	</div>
+
+			   	<div class="panel-body">
+				<div class="form-group">
+				<div class="col-md-3"><label for="underregularmedication">Under Regular Medication*</label>
+						<label class="radio-inline"><input type="radio" name="no">No</label>
+						<label class="radio-inline"><input type="radio" name="yes">Yes (specify)</label>
+						<input type="text"class="form-control">
+				</div>
+										
+				<div class="col-md-3"><label for="involvementonOtherOrganization">Involvement on Other Banks/Institutions</label><select name="otherbaks" class="form-control beta">
+            				<option value="CO">Co-operative</option>
+           					<option value="M">Micro-Finance</option>
+           					<option value="B">Bank</option>
+       					 </select>
+       					 </div>
+				</div>
+				</div>			
+  				  	<div class="panel-footer">
+  				  		<button type="button" class="btn btn-primary btnPrevious">Back</button>
+  				  		<button type="button" class="btn btn-primary btnNext" style="float: right;">Next</button>
+  				  	</div>
+			   	</div>
+				
+			</div> <!--Tab2 Ending -->
+
+			<!--Tab3 Start -->
+		<div id="tab3" class="tab-pane fade">
+		   <div class="panel panel-primary" >
+		   <!--Permanent Adress Panel Start -->
+			 <div class="panel-body">   
+				 	<div class="form-group">
+				 		<h4>Permanent Address (स्थायी ठेगाना)</h4>	
+				 	</div>	
+				 	<div class="form-group">
+				 	  <div class="col-md-3"><label for="lzone">Zone *</label><select name="zone" class="form-control beta">
+            				<option value="B">Bagmati</option>
+           					<option value="N">Narayani</option>
+           					<option value="N">Janakpur</option>
+       					 </select>
+
+       					</div>
+				 	 <div class="col-md-3"><label for="lDistrict">District (जिल्ला)*</label><select name="district" class="form-control beta">
+            				<option value="K">Kathmandu</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select>
+       				</div>
+				 	 <div class="col-md-3"><label for="lMunicipalityVdc">Municipality/VDC (न.पा/गा.वि.स.)*</label><input type="text" class="form-control" placeholder="Municipality/Zone"</div></div>
+				 	 <div class="col-md-3"><label for="lWard No.">Ward No.(वडा नं ) *</label><input type="text" class="form-control" placeholder="Ward No."</div>
+				 	</div>	
+				 	 <div class="col-md-3"><label for="lHouseNo">House No.(घर नं. ) </label><input type="text" class="form-control" placeholder="House No."</div>
+				 	</div>	
+				 	 <div class="col-md-3"><label for="lStreet">Street/Tole (टोल )*</label><input type="text" class="form-control" placeholder="Street No"</div>
+				 	</div>
+				 	 <div class="col-md-3"><label for="ltelno">Tel.No.(फोन नं) </label><input type="text" class="form-control" placeholder="Telephone No"</div>
+				 	</div>	
+				 	 <div class="col-md-3"><label for="P.Box.No">P.Box. No.</label><input type="text" class="form-control" placeholder="Post Box. No."</div>
+				 	</div>	
+				</div>	
+			</div>
+			<!--permanent Adress Panel Ending -->
+
+			<!--Temporary Adress Panel Start -->
+			 <div class="panel-body"> 
+			<div class="form-group">		
+			 <h4 >Temporary Address</h4>	
+				 <div class="col-md-3"><label for="lzone">Zone *</label><select name="zone" class="form-control beta">
+            				<option value="B">Bagmati</option>
+           					<option value="N">Narayani</option>
+           					<option value="N">Janakpur</option>
+       					 </select>
+
+       					</div>
+				 	 <div class="col-md-3"><label for="lDistrict">District (जिल्ला) *</label><select name="district" class="form-control beta">
+            				<option value="K">Kathmandu</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select>
+       				</div>
+				 	 <div class="col-md-3"><label for="lMunicipalityVdc">Municipality/VDC (न.पा/गा.वि.स.)*</label><input type="text" class="form-control" placeholder="Municipality/Zone"</div></div>
+				 	 <div class="col-md-3"><label for="lWard No.">Ward No.(वडा नं ) *</label><input type="text" class="form-control" placeholder="Ward No."</div>
+				 	</div>	
+				 	 <div class="col-md-3"><label for="lHouseNo">House No.(घर नं. ) </label><input type="text" class="form-control" placeholder="House No."</div>
+				 	</div>	
+				 	 <div class="col-md-3"><label for="lStreet">Street/Tole (टोल ) *</label><input type="text" class="form-control" placeholder="Street"</div>
+				 	</div>
+				 	 <div class="col-md-3"><label for="ltelno">Tel.No.(फोन नं) </label><input type="text" class="form-control" placeholder="Telephone No."</div>
+				 	</div>	
+				 	<div class="col-md-3"><label for="P.Box.No">P.Box. No.</label><input type="text" class="form-control" placeholder="Post Box No."</div>
+				 	</div>	
+			</div>
+			</div>
+			<!--Temporary Adress Panel Ending-->
+
+			<!--Maiti Adress Panel Start -->
+			<div class="panel-body"> 
+			<div class="form-group">		
+			 <h4 >Maiti Address</h4>	
+				 <div class="col-md-3"><label for="lzone">Zone *</label><select name="zone" class="form-control beta">
+            				<option value="B">Bagmati</option>
+           					<option value="N">Narayani</option>
+           					<option value="N">Janakpur</option>
+       					 </select>
+
+       					</div>
+				 	 <div class="col-md-3"><label for="lDistrict">District (जिल्ला)*</label><select name="district" class="form-control beta">
+            				<option value="K">Kathmandu</option>
+           					<option value="B">Bhaktapur</option>
+           					<option value="L">Lalitpur</option>
+       					 </select>
+       				</div>
+				 	 <div class="col-md-3"><label for="lMunicipalityVdc">Municipality/VDC (न.पा/गा.वि.स.)*</label><input type="text" class="form-control" placeholder="Municipality/Zone"</div></div>
+				 	 <div class="col-md-3"><label for="lWard No.">Ward No.(वडा नं) *</label><input type="text" class="form-control" placeholder="Ward No"</div>
+				 	</div>	
+				 	 <div class="col-md-3"><label for="lHouseNo">House No.(घर नं. )</label><input type="text" class="form-control" placeholder="Houseno"</div>
+				 	</div>	
+				 	 <div class="col-md-3"><label for="lStreet">Street/Tole (टोल )*</label><input type="text" class="form-control" placeholder="Street No."</div>
+				 	</div>
+				 	 <div class="col-md-3"><label for="ltelno">Tel.No.(फोन नं)</label><input type="text" class="form-control" placeholder="Telephone No."</div>
+				 	</div>	
+				 	<div class="col-md-3"><label for="P.Box.No">P.Box.No.</label><input type="text" class="form-control" placeholder="Post Box No."</div>
+				 	</div>	
+			</div>
+			</div><!--Maiti Adress Panel Ending -->
+
+			<div class="panel-footer">
+				<button type="button" class="btn btn-primary btnPrevious">Back</button>
+				<button type="button" class="btn btn-primary btnNext" style="float: right;">Next</button>
+			</div>
+         </div>
+         </div>	<!--Tab3 End -->
+         
+         <!--Tab4 Start -->
+		<div id="tab4" class="tab-pane fade">
+		   <div class="panel panel-primary" >
+		   		<h4>Spouce/Husband National Identity Card:</h4>
+			    <div class="panel-body"> 
+				   <h4>Citizenship (नागरिकता )</h4>
+				   	<div class="form-group">
+				     	<div class="col-md-3"><label>Citizenship No.(नागरिकता नं.)*</label><input type="text" class="form-control" placeholder="Citizenship No"></div>
+				     	<div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला)*</label><select name="district" class="form-control beta">
+	            				<option value="K">Kathmandu</option>
+	           					<option value="B">Bhaktapur</option>
+	           					<option value="L">Lalitpur</option>
+	       					 </select></div>
+				     	<div class="col-md-3"><label>Issued Date (जारी मिति )*</label><input type="date" class="form-control"></div>
+				     	<div class="col-md-2"><span class="btn btn-default btn-file">Citizenship Photo <input type="file"></span></div>
+				   	</div>
+			   	</div>
+
+		   		<div class="panel-body"> 
+				   <h4>Passport</h4>
+				   	<div class="form-group">
+				     	<div class="col-md-3"><label>Passport No.*</label><input type="text" class="form-control" placeholder="Passport No."></div>
+				     	<div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला) *</label><select name="district" class="form-control beta">
+	            				<option value="K">Kathmandu</option>
+	           					<option value="B">Bhaktapur</option>
+	           					<option value="L">Lalitpur</option>
+	       					 </select></div>
+				     	<div class="col-md-3"><label>Issued Date (जारी मिति )*</label><input type="date" class="form-control"></div>
+				     	<div class="col-md-2"><span class="btn btn-default btn-file">Passport Photo <input type="file"></span></div>
+				   	</div>
+			   	</div>
+
+			   	<div class="panel-body"> 
+				   <h4>Driving License</h4>
+				   	<div class="form-group">
+				     	<div class="col-md-3"><label>License No.*</label><input type="text" class="form-control" placeholder No.="Driving License"></div>
+				     	<div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला)*</label><select name="district" class="form-control beta">
+	            				<option value="K">Kathmandu</option>
+	           					<option value="B">Bhaktapur</option>
+	           					<option value="L">Lalitpur</option>
+	       					 </select></div>
+				     	<div class="col-md-3"><label>Issued Date (जारी मिति )*</label><input type="date" class="form-control"></div>
+				     	<div class="col-md-2"><span class="btn btn-default btn-file">Driving License Photo <input type="file"></span></div>
+				   	</div>
+				</div>
+
+				<div class="panel-body"> 
+				   <h4>Spouce Occupation</h4>
+				   	<div class="form-group">
+				     	<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>Name of Business</th>
+					                <th>Agriculture</th>
+					                <th>Trading</th>
+					                <th>Industry</th>
+					                <th>Services</th>
+					                <th>Foreign Employment</th>					                
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					            	<td>Name</td>
+					            	<td><input type="text" class="form-control"></td>
+					            	<td><input type="text" class="form-control"></td>
+					            	<td><input type="text" class="form-control"></td>
+					            	<td><input type="text" class="form-control"></td>
+					            	<td><input type="text" class="form-control"></td>
+					            </tr>
+					            <tr>
+					            	<td>Income</td>
+					            	<td><input type="text" class="form-control"></td>
+					            	<td><input type="text" class="form-control"></td>
+					            	<td><input type="text" class="form-control"></td>
+					            	<td><input type="text" class="form-control"></td>
+					            	<td><input type="text" class="form-control"></td> 
+					            </tr>					            						          
+					      </tbody>
+					    </table>
+				   	</div>
+				</div>
+
+				<div class="col-md-6"><div class="panel-body">
+					<h4>Member Children</h4>
+				   	<div class="form-group">
+				     	<div class="col-md-3"><label>No. of Boys</label><select name="children" class="form-control beta">
+	            				<option value="1">1</option>
+	           					<option value="2">2</option>
+	           					<option value="3">3</option>
+	           					<option value="4">4</option>
+	           					<option value="5">5</option>
+	           					<option value="6">6</option>
+	       					 </select>
+	       				</div>
+				     	<div class="col-md-3"><label>No. of Girls</label><select name="children" class="form-control beta">
+	            				<option value="1">1</option>
+	           					<option value="2">2</option>
+	           					<option value="3">3</option>
+	           					<option value="4">4</option>
+	           					<option value="5">5</option>
+	           					<option value="6">6</option>
+	       					 </select>
+	       				</div>				     
+				   	</div>
+				 </div>
+			 </div>
+				<div class="panel-body">
+				   <h4>Family Type</h4>
+				   	<div class="form-group">
+					   	<label class="radio-inline"><input type="radio" name="joint">Joint</label>
+						<label class="radio-inline"><input type="radio" name="nuclear">Nuclear</label>
+				   	</div>
+				</div>
+				     					     	
+		   		<div class="panel-body">
+		   			<div class="form-group">
+		   			<h4>Details of Family Member</h4>
+		   				<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>S.N.</th>
+					                <th>Relation</th>
+					                <th>Family Member Full Name</th>
+					                <th>Age</th>
+					                <th>Gender</th>
+					                <th>Main Occupation</th>
+					                <th>Education</th>
+					                <th>Monthly Income</th>
+					                <th>Citizenship No.</th>
+					                <th>Mobile No.</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>1</td>
+					                <td>Spouce</td>					               
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>
+					                <td><select name="Gender" class="form-control beta">
+				            				<option value="male">Male</option>
+				           					<option value="female">Female</option>
+				           					<option value="others">Others</option>				           					
+				       					</select>
+				       				</td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><select name="Education" class="form-control beta">
+				            				<option value="masters">Masters</option>
+				           					<option value="bachelors">Bachelors</option>
+				           					<option value="intermediate">Intermediate/+2</option>
+				           					<option value="slc">SLC</option>
+				           					<option value="eightpass">8 Class Pass</option>				    
+				           					<option value="fivepass">5 Class Pass</option>
+				           					<option value="underfive">Under 5</option>
+				           					<option value="literate">literate</option>
+				           					<option value="illiterate">illiterate</option>
+				       					</select>
+				       			   </td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>						                					       	
+				       			</tr>
+				       			<tr>
+					                <td>2</td>
+					                <td>Father (बाबुको नाम)</td>					               
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>
+					                <td><select name="Gender" class="form-control beta">
+				            				<option value="male">Male</option>
+				           					<option value="female">Female</option>
+				           					<option value="others">Others</option>				           					
+				       					</select>
+				       				</td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><select name="Education" class="form-control beta">
+				            				<option value="masters">Masters</option>
+				           					<option value="bachelors">Bachelors</option>
+				           					<option value="intermediate">Intermediate/+2</option>
+				           					<option value="slc">SLC</option>
+				           					<option value="eightpass">8 Class Pass</option>				    
+				           					<option value="fivepass">5 Class Pass</option>
+				           					<option value="underfive">Under 5</option>
+				           					<option value="literate">literate</option>
+				           					<option value="illiterate">illiterate</option>
+				       					</select>
+				       			   </td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>						                					       	
+				       			</tr>
+				       			<tr>
+					                <td>3</td>
+					                <td>Mother</td>					               
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>
+					                <td><select name="Gender" class="form-control beta">
+				            				<option value="male">Male</option>
+				           					<option value="female">Female</option>
+				           					<option value="others">Others</option>				           					
+				       					</select>
+				       				</td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><select name="Education" class="form-control beta">
+				            				<option value="masters">Masters</option>
+				           					<option value="bachelors">Bachelors</option>
+				           					<option value="intermediate">Intermediate/+2</option>
+				           					<option value="slc">SLC</option>
+				           					<option value="eightpass">8 Class Pass</option>				    
+				           					<option value="fivepass">5 Class Pass</option>
+				           					<option value="underfive">Under 5</option>
+				           					<option value="literate">literate</option>
+				           					<option value="illiterate">illiterate</option>
+				       					</select>
+				       			   </td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>						                					       	
+				       			</tr>
+				       			<tr>
+					                <td>4</td>
+					                <td>Father-in-Law</td>					               
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>
+					                <td><select name="Gender" class="form-control beta">
+				            				<option value="male">Male</option>
+				           					<option value="female">Female</option>
+				           					<option value="others">Others</option>				           					
+				       					</select>
+				       				</td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><select name="Education" class="form-control beta">
+				            				<option value="masters">Masters</option>
+				           					<option value="bachelors">Bachelors</option>
+				           					<option value="intermediate">Intermediate/+2</option>
+				           					<option value="slc">SLC</option>
+				           					<option value="eightpass">8 Class Pass</option>				    
+				           					<option value="fivepass">5 Class Pass</option>
+				           					<option value="underfive">Under 5</option>
+				           					<option value="literate">literate</option>
+				           					<option value="illiterate">illiterate</option>
+				       					</select>
+				       			   </td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>	
+				       			   <td><input type="text" class="form-control"></td>					                					       	
+				       			</tr>
+				       			<tr>
+					                <td>5</td>
+					                <td>GrandFather/GrandFather-in-Law</td>					               
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>
+					                <td><select name="Gender" class="form-control beta">
+				            				<option value="male">Male</option>
+				           					<option value="female">Female</option>
+				           					<option value="others">Others</option>				           					
+				       					</select>
+				       				</td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><select name="Education" class="form-control beta">
+				            				<option value="masters">Masters</option>
+				           					<option value="bachelors">Bachelors</option>
+				           					<option value="intermediate">Intermediate/+2</option>
+				           					<option value="slc">SLC</option>
+				           					<option value="eightpass">8 Class Pass</option>				    
+				           					<option value="fivepass">5 Class Pass</option>
+				           					<option value="underfive">Under 5</option>
+				           					<option value="literate">literate</option>
+				           					<option value="illiterate">illiterate</option>
+				       					</select>
+				       			   </td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>						                					       	
+				       			</tr>
+				       			<tr>
+					                <td>6</td>
+					                <td>Son 1</td>					               
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>
+					                <td><select name="Gender" class="form-control beta">
+				            				<option value="male">Male</option>
+				           					<option value="female">Female</option>
+				           					<option value="others">Others</option>				           					
+				       					</select>
+				       				</td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><select name="Education" class="form-control beta">
+				            				<option value="masters">Masters</option>
+				           					<option value="bachelors">Bachelors</option>
+				           					<option value="intermediate">Intermediate/+2</option>
+				           					<option value="slc">SLC</option>
+				           					<option value="eightpass">8 Class Pass</option>				    
+				           					<option value="fivepass">5 Class Pass</option>
+				           					<option value="underfive">Under 5</option>
+				           					<option value="literate">literate</option>
+				           					<option value="illiterate">illiterate</option>
+				       					</select>
+				       			   </td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>						                					       	
+				       			</tr>
+				       			<tr>
+					                <td>7</td>
+					                <td>Son 2</td>					               
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>
+					                <td><select name="Gender" class="form-control beta">
+				            				<option value="male">Male</option>
+				           					<option value="female">Female</option>
+				           					<option value="others">Others</option>				           					
+				       					</select>
+				       				</td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><select name="Education" class="form-control beta">
+				            				<option value="masters">Masters</option>
+				           					<option value="bachelors">Bachelors</option>
+				           					<option value="intermediate">Intermediate/+2</option>
+				           					<option value="slc">SLC</option>
+				           					<option value="eightpass">8 Class Pass</option>				    
+				           					<option value="fivepass">5 Class Pass</option>
+				           					<option value="underfive">Under 5</option>
+				           					<option value="literate">literate</option>
+				           					<option value="illiterate">illiterate</option>
+				       					</select>
+				       			   </td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>						                					       	
+				       			</tr>
+				       			<tr>
+					                <td>8</td>
+					                <td>Daughter 1</td>					               
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>
+					                <td><select name="Gender" class="form-control beta">
+				            				<option value="male">Male</option>
+				           					<option value="female">Female</option>
+				           					<option value="others">Others</option>				           					
+				       					</select>
+				       				</td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><select name="Education" class="form-control beta">
+				            				<option value="masters">Masters</option>
+				           					<option value="bachelors">Bachelors</option>
+				           					<option value="intermediate">Intermediate/+2</option>
+				           					<option value="slc">SLC</option>
+				           					<option value="eightpass">8 Class Pass</option>				    
+				           					<option value="fivepass">5 Class Pass</option>
+				           					<option value="underfive">Under 5</option>
+				           					<option value="literate">literate</option>
+				           					<option value="illiterate">illiterate</option>
+				       					</select>
+				       			   </td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>	
+				       			   <td><input type="text" class="form-control"></td>					                					       	
+				       			</tr>
+				       			<tr>
+					                <td>9</td>
+					                <td>Daughter 2</td>					               
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>
+					                <td><select name="Gender" class="form-control beta">
+				            				<option value="male">Male</option>
+				           					<option value="female">Female</option>
+				           					<option value="others">Others</option>				           					
+				       					</select>
+				       				</td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><select name="Education" class="form-control beta">
+				            				<option value="masters">Masters</option>
+				           					<option value="bachelors">Bachelors</option>
+				           					<option value="intermediate">Intermediate/+2</option>
+				           					<option value="slc">SLC</option>
+				           					<option value="eightpass">8 Class Pass</option>				    
+				           					<option value="fivepass">5 Class Pass</option>
+				           					<option value="underfive">Under 5</option>
+				           					<option value="literate">literate</option>
+				           					<option value="illiterate">illiterate</option>
+				       					</select>
+				       			   </td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>
+				       			   <td><input type="text" class="form-control"></td>						                					       	
+				       			</tr>
+				       		</tbody>
+				       	</table>
+		   			</div>
+		   		</div>
+
+		   	 	<div class="panel-body">
+					<div class="form-group">
+						<div class="col-md-4"><label for="underregularmedication">Self/ If any of the family members had been member in past</label>
+								<label class="radio-inline"><input type="radio" name="no">No</label>
+								<label class="radio-inline"><input type="radio" name="yes">Yes (specify)</label>
+								<input type="text"class="form-control">
+						</div>
+						<div class="col-md-4"><label for="underregularmedication">Self/ If any of the family members associated to similar types of institution</label>
+								<label class="radio-inline"><input type="radio" name="no">No</label>
+								<label class="radio-inline"><input type="radio" name="yes">Yes (specify)</label>
+								<input type="text"class="form-control">
+						</div>
+						<div class="col-md-4"><label for="underregularmedication">Self/ If any of the family members victim of disease /medication details</label>
+								<label class="radio-inline"><input type="radio" name="no">No</label>
+								<label class="radio-inline"><input type="radio" name="yes">Yes (specify)</label>
+								<input type="text"class="form-control">
+						</div>
+					</div>
+				</div>
+		   				   		
+			   		<div class="panel-footer">
+			   			<button type="button" class="btn btn-primary btnPrevious">Back</button>
+			   			<button type="button" class="btn btn-primary btnNext" style="float: right;">Next</button>
+			   		</div>
+			   </div>
+		</div> <!--Tab4 End -->
+
+		 <!--Tab5 Start -->
+		<div id="tab5" class="tab-pane fade">
+		   <div class="panel panel-primary" >
+		   		<div class="panel-body">
+		   		<h4>Business and Property Profile:</h4>
+		   			<div class="form-group">
+		   					<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>S.N.</th>
+					                <th>Category</th>
+					                <th>Initial Capital</th>
+					                <th>Average Stock</th>
+					                <th>No. of Years/Est.Date</th>
+					                <th>Average TurnOver/Monthly</th>
+					                <th>Vat No./Pan No.</th>					               
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>1</td>
+					                <td><select name="category" class="form-control beta">
+				            				<option value="agriculture">Agriculture</option>
+				           					<option value="industry">Industry</option>
+				           					<option value="trading">Trading</option>
+				           					<option value="sercvice">Services</option>				           					
+				       					</select>
+				       				</td>
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>  
+				       				<td><input type="date" class="form-control" id="datepicker"></td>
+				       				<td><input type="text" class="form-control"></td>  
+				       				<td><input type="text" class="form-control"></td>  
+				       			</tr>
+				       			 <tr>
+					                <td>2</td>
+					                <td><select name="category" class="form-control beta">
+				            				<option value="agriculture">Agriculture</option>
+				           					<option value="industry">Industry</option>
+				           					<option value="trading">Trading</option>
+				           					<option value="sercvice">Services</option>				           					
+				       					</select>
+				       				</td>
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>  
+				       				<td><input type="date" class="form-control" id="datepicker"></td>
+				       				<td><input type="text" class="form-control"></td>  
+				       				<td><input type="text" class="form-control"></td>  
+				       			</tr>
+				       			 <tr>
+					               <td>3</td>
+					                <td><select name="category" class="form-control beta">
+				            				<option value="agriculture">Agriculture</option>
+				           					<option value="industry">Industry</option>
+				           					<option value="trading">Trading</option>
+				           					<option value="sercvice">Services</option>				           					
+				       					</select>
+				       				</td>
+					                <td><input type="text" class="form-control"></td>  
+					                <td><input type="text" class="form-control"></td>  
+				       				<td><input type="date" class="form-control" id="datepicker"></td>
+				       				<td><input type="text" class="form-control"></td>  
+				       				<td><input type="text" class="form-control"></td>  
+				       			</tr>
+				       			
+				       		</tbody>
+				       	</table>
+		   			</div>
+		   		</div>
+
+		   		<div class="panel-body">
+		   		<h4>Other Assets:</h4>
+		   			<div class="form-group">
+		   				<div class="col-md-4"><label>Bank Balance</label><input type="text" class="form-control" id="centercode" placeholder="Bank Balance"></div>
+		   				<div class="col-md-4"><label>Ornaments</label><input type="text" class="form-control" id="centercode" placeholder="Ornaments"></div>
+		   				<div class="col-md-4"><label>Total Value</label><input type="text" class="form-control" id="centercode" placeholder="Total Value">
+		   				</div>
+		   			</div>
+		   		</div>
+
+		   		<div class="panel-body">
+		   		<h4>Vechicle</h4>
+		   			<div class="form-group">
+		   				<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>S.N.</th>
+					                <th>Particulars</th>
+					                <th>Number of Vechicle</th>
+					                <th>Total Value</th>					            
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>1</td>
+					                <td><select name="Vechicle" class="form-control beta">
+				            				<option value="Car">Car</option>
+				           					<option value="Motorcycle">Motorcycle</option>
+				           					<option value="Bycle">Bycle</option>
+				           					<option value="Scooter">Scooter</option>
+				           					<option value="Oters">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>
+					             <tr>
+					                <td>2</td>
+					                <td><select name="Vechicle" class="form-control beta">
+				            				<option value="Car">Car</option>
+				           					<option value="Motorcycle">Motorcycle</option>
+				           					<option value="Bycle">Bycle</option>
+				           					<option value="Scooter">Scooter</option>
+				           					<option value="Oters">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>
+					            <tr>
+					                <td>3</td>
+					                <td><select name="Vechicle" class="form-control beta">
+				            				<option value="Car">Car</option>
+				           					<option value="Motorcycle">Motorcycle</option>
+				           					<option value="Bycle">Bycle</option>
+				           					<option value="Scooter">Scooter</option>
+				           					<option value="Oters">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>					          
+					        </tbody>
+					    </table>
+					 </div>
+			   </div>
+
+			   <div class="panel-body">
+		   		<h4>Electronics</h4>
+		   			<div class="form-group">
+		   				<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>S.N.</th>
+					                <th>Particulars</th>
+					                <th>Number of Electronics Items</th>
+					                <th>Total Value</th>					            
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>1</td>
+					                <td><select name="Vechicle" class="form-control beta">
+				            				<option value="television">Television</option>
+				           					<option value="refri">Refrigerator</option>
+				           					<option value="mobile">Mobile</option>
+				           					<option value="others">Others</option>				           				
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>
+					             <tr>
+					                <td>2</td>
+					                <td><select name="Vechicle" class="form-control beta">
+				            				<option value="television">Television</option>
+				           					<option value="refri">Refrigerator</option>
+				           					<option value="mobile">Mobile</option>
+				           					<option value="others">Others</option>				           				
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>
+					            <tr>
+					                <td>3</td>
+					                <td><select name="Vechicle" class="form-control beta">
+				            				<option value="television">Television</option>
+				           					<option value="refri">Refrigerator</option>
+				           					<option value="mobile">Mobile</option>
+				           					<option value="others">Others</option>				           				
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>					          
+					        </tbody>
+					    </table>
+					 </div>
+			   </div>
+
+			   <div class="panel-body">
+		   		<h4>Furniture</h4>
+		   			<div class="form-group">
+		   				<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>S.N.</th>
+					                <th>Particulars</th>
+					                <th>Number of Furniture Items</th>
+					                <th>Total Value</th>					            
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>1</td>
+					              	<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>
+					            <tr>
+					                <td>2</td>
+					                <td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>
+					            <tr>
+					                <td>3</td>
+					                <td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>					          
+					        </tbody>
+					    </table>
+					 </div>
+			   </div>
+
+			    <div class="panel-body">
+		   		<h4>Loan Details</h4>
+		   			<div class="form-group">
+		   				<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>Loan</th>
+					                <th>Amount</th>
+					                <th>Interest</th>
+					                <th>Remaining</th>	
+					                <th>Name</th>					            
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>Borrow</td>
+					              	<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>
+					            <tr>
+					                <td>Lend</td>
+					                <td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>
+					            </tr>					       					         
+					        </tbody>
+					    </table>
+					 </div>
+			   </div>
+
+			    <div class="panel-body">
+		   		<h4>Assets on Collateral</h4>
+		   			<div class="form-group">
+		   				<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>S.N.</th>
+					                <th>Particulars</th>
+					                <th>Total Value</th>					             					           
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>1</td>
+					              	<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>				       				
+					            </tr>
+					            <tr>
+					                <td>2</td>
+					                <td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>				       			
+					            </tr>					       					         
+					        </tbody>
+					    </table>
+					 </div>
+			   </div>
+		   	
+		   		<div class="panel-footer">
+		   			<button type="button" class="btn btn-primary btnPrevious">Back</button>
+		   			<button type="button" class="btn btn-primary btnNext" style="float: right;">Next</button>
+		   		</div>
+		   </div>
+		</div> <!--Tab5 End -->
+
+		 <!--Tab6 Start -->
+		<div id="tab6" class="tab-pane fade">
+		   <div class="panel panel-primary" >
+		   		<div class="panel-body">
+		   			<div class="form-group">
+		   				<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>S.N.</th>
+					                <th>House</th>
+					                <th>No.of House</th>
+					                <th>Roof of House</th>
+					                <th>Number of Rooms</th>
+					                <th>House Covered Area</th>
+					                <th>Materials used on House Building</th>
+					                <th>Total Value</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>1</td>
+					                <td>Pakki</td>
+					                <td><input type="text" class="form-control"></td>  
+					                <td>
+					                	<select name="RoofHouse" class="form-control beta">
+				            				<option value="Tile">Tile</option>
+				           					<option value="Tin">Tin</option>
+				           					<option value="Cemented">Cemented</option>
+				           					<option value="Bush">Bush</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				 <td>
+					                	<select name="materialhouse" class="form-control beta">
+				            				<option value="Brick">Brick</option>
+				           					<option value="Bamboo">Bamboo</option>
+				           					<option value="Stone">Stone</option>
+				           					<option value="Cley">Cley</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					             <tr>
+					                <td>2</td>
+					                <td>Kachi</td>
+					                <td><input type="text" class="form-control"></div></td>  
+					                <td>
+					                	<select name="RoofHouse" class="form-control beta">
+				            				<option value="Tile">Tile</option>
+				           					<option value="Tin">Tin</option>
+				           					<option value="Cemented">Cemented</option>
+				           					<option value="Bush">Bush</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				 <td>
+					                	<select name="materialhouse" class="form-control beta">
+				            				<option value="Brick">Brick</option>
+				           					<option value="Bamboo">Bamboo</option>
+				           					<option value="Stone">Stone</option>
+				           					<option value="Cley">Cley</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					             <tr>
+					                <td>3</td>
+					                <td>Kath</td>
+					                <td><input type="text" class="form-control"></div></td>  
+					                <td>
+					                	<select name="RoofHouse" class="form-control beta">
+				            				<option value="Tile">Tile</option>
+				           					<option value="Tin">Tin</option>
+				           					<option value="Cemented">Cemented</option>
+				           					<option value="Bush">Bush</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				 <td>
+					                	<select name="materialhouse" class="form-control beta">
+				            				<option value="Brick">Brick</option>
+				           					<option value="Bamboo">Bamboo</option>
+				           					<option value="Stone">Stone</option>
+				           					<option value="Cley">Cley</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					             <tr>
+					                <td>4</td>
+					                <td>Bans</td>
+					                <td><input type="text" class="form-control"></div></td>  
+					                <td>
+					                	<select name="RoofHouse" class="form-control beta">
+				            				<option value="Tile">Tile</option>
+				           					<option value="Tin">Tin</option>
+				           					<option value="Cemented">Cemented</option>
+				           					<option value="Bush">Bush</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				 <td>
+					                	<select name="materialhouse" class="form-control beta">
+				            				<option value="Brick">Brick</option>
+				           					<option value="Bamboo">Bamboo</option>
+				           					<option value="Stone">Stone</option>
+				           					<option value="Cley">Cley</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					             <tr>
+					                <td>5</td>
+					                <td>Fuss</td>
+					                <td><input type="text" class="form-control"></div></td>  
+					                <td>
+					                	<select name="RoofHouse" class="form-control beta">
+				            				<option value="Tile">Tile</option>
+				           					<option value="Tin">Tin</option>
+				           					<option value="Cemented">Cemented</option>
+				           					<option value="Bush">Bush</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				 <td>
+					                	<select name="materialhouse" class="form-control beta">
+				            				<option value="Brick">Brick</option>
+				           					<option value="Bamboo">Bamboo</option>
+				           					<option value="Stone">Stone</option>
+				           					<option value="Cley">Cley</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					              <tr>
+					                <td>6</td>
+					                <td>Others</td>
+					                <td><input type="text" class="form-control"></div></td>  
+					                <td>
+					                	<select name="RoofHouse" class="form-control beta">
+				            				<option value="Tile">Tile</option>
+				           					<option value="Tin">Tin</option>
+				           					<option value="Cemented">Cemented</option>
+				           					<option value="Bush">Bush</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				<td><input type="text" class="form-control"></div></td>
+				       				 <td>
+					                	<select name="materialhouse" class="form-control beta">
+				            				<option value="Brick">Brick</option>
+				           					<option value="Bamboo">Bamboo</option>
+				           					<option value="Stone">Stone</option>
+				           					<option value="Cley">Cley</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></div></td>
+					            </tr>
+
+		   					</tbody>
+		   				</table>
+		   			</div>
+		   		</div>
+		   		<div class="panel-footer">
+		   			<button type="button" class="btn btn-primary btnPrevious">Back</button>
+		   			<button type="button" class="btn btn-primary btnNext" style="float: right;">Next</button>
+		   		</div>
+		   </div>
+		</div> <!--Tab6 End -->
+
+		 <!--Tab7 Start -->
+		<div id="tab7" class="tab-pane fade">
+		   <div class="panel panel-primary" >
+		   		<div class="panel-body">
+		   			<div class="form-group">
+		   				<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>S.N.</th>
+					                <th>Category</th>
+					                <th>Number Count</th>
+					                <th>Total Value</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>1</td>
+					                <td>Cow</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+					            <tr>
+					                <td>2</td>
+					                <td>Buffaloes</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+					            <tr>
+					                <td>3</td>
+					                <td>Ox</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					              <tr>
+					                <td>4</td>
+					                <td>Goat</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					              <tr>
+					                <td>5</td>
+					                <td>Pig</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					              <tr>
+					                <td>6</td>
+					                <td>Sheep</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					              <tr>
+					                <td>7</td>
+					                <td>Duck</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					              <tr>
+					                <td>8</td>
+					                <td>Hen</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					              <tr>
+					                <td>9</td>
+					                <td>Fowl</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+
+					              <tr>
+					                <td>10</td>
+					                <td>Others</td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					                <td><div class="col-md-5"><input type="text" class="form-control"></div></td>
+					            </tr>
+					        </tbody>
+					    </table>
+		   			</div>
+		   		</div>
+		   		<div class="panel-footer">
+		   			<button type="button" class="btn btn-primary btnPrevious">Back</button>
+		   			<button type="button" class="btn btn-primary btnNext" style="float: right;">Next</button>
+		   		</div>
+		   </div>
+		</div> <!--Tab7 End -->
+
+		 <!--Tab8 Start -->
+		<div id="tab8" class="tab-pane fade">
+		   <div class="panel panel-primary" >
+		   		<div class="panel-body">
+		   			<div class="form-group">
+		   					<table class="table table-bordered">
+					        <thead >
+					            <tr>
+					                <th>S.N.</th>
+					                <th>Land Category</th>
+					                <th>Land Type</th>
+					                <th>Land Measurement</th>
+					                <th>Total Value</th>
+					                <th>Major Crops</th>
+					                <th>Production Crops Volume</th>
+					                <th>Average Income (Monthly)</th>					              
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>1</td>
+					                <td>Household Land</td>					              
+					                <td><select name="LandType" class="form-control beta">
+				            				<option value="ailani">Ailani</option>
+				           					<option value="adhiya">Adhiya</option>
+				           					<option value="contract">Contract(Hunda)</option>
+				           					<option value="others">Others</option>
+				       					</select>
+				       				</td>
+					                <td><div class="col-md-6"><input type="text" class="form-control"></div>
+				                		<div class="col-md-6"><select name="LandMeasurement" class="form-control beta">
+				            				<option value="bigha">Bigha</option>
+				           					<option value="ropani">Ropani</option>
+				           					<option value="squareft">Square Ft.</option>				           					
+				       					</select></div>
+					                </td>		      					      
+					                <td><input type="text" class="form-control"></td>
+					                <td>
+					                	<select name="MajorCrops" class="form-control beta">
+				            				<option value="paddy">Paddy</option>
+				           					<option value="wheat">Wheat</option>
+				           					<option value="coffee">Coffee</option>
+				           					<option value="maize">Maize</option>
+				           					<option value="millet">Millet</option>
+				           					<option value="barely">Barley</option>
+				           					<option value="sugarcane">Sugarcane</option>
+				           					<option value="tobacco">Tobacco</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>				       				
+					            </tr>
+
+					            <tr>
+					                <td>2</td>
+					                <td>Farming Land</td>					              
+					                <td><select name="LandType" class="form-control beta">
+				            				<option value="ailani">Ailani</option>
+				           					<option value="adhiya">Adhiya</option>
+				           					<option value="contract">Contract(Hunda)</option>
+				           					<option value="others">Others</option>
+				       					</select>
+				       				</td>
+					                <td><div class="col-md-6"><input type="text" class="form-control"></div>
+				                		<div class="col-md-6"><select name="LandMeasurement" class="form-control beta">
+				            				<option value="bigha">Bigha</option>
+				           					<option value="ropani">Ropani</option>
+				           					<option value="squareft">Square Ft.</option>				           					
+				       					</select></div>
+					                </td>		      					      
+					                <td><input type="text" class="form-control"></td>
+					                <td>
+					                	<select name="MajorCrops" class="form-control beta">
+				            				<option value="paddy">Paddy</option>
+				           					<option value="wheat">Wheat</option>
+				           					<option value="coffee">Coffee</option>
+				           					<option value="maize">Maize</option>
+				           					<option value="millet">Millet</option>
+				           					<option value="barely">Barley</option>
+				           					<option value="sugarcane">Sugarcane</option>
+				           					<option value="tobacco">Tobacco</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>				       				
+					            </tr>
+
+					            <tr>
+					                <td>3</td>
+					                <td>Adhiya Land (Borrowed)</td>					              
+					                <td><select name="LandType" class="form-control beta">
+				            				<option value="ailani">Ailani</option>
+				           					<option value="adhiya">Adhiya</option>
+				           					<option value="contract">Contract(Hunda)</option>
+				           					<option value="others">Others</option>
+				       					</select>
+				       				</td>
+					                <td><div class="col-md-6"><input type="text" class="form-control"></div>
+				                		<div class="col-md-6"><select name="LandMeasurement" class="form-control beta">
+				            				<option value="bigha">Bigha</option>
+				           					<option value="ropani">Ropani</option>
+				           					<option value="squareft">Square Ft.</option>				           					
+				       					</select></div>
+					                </td>		      					      
+					                <td><input type="text" class="form-control"></td>
+					                <td>
+					                	<select name="MajorCrops" class="form-control beta">
+				            				<option value="paddy">Paddy</option>
+				           					<option value="wheat">Wheat</option>
+				           					<option value="coffee">Coffee</option>
+				           					<option value="maize">Maize</option>
+				           					<option value="millet">Millet</option>
+				           					<option value="barely">Barley</option>
+				           					<option value="sugarcane">Sugarcane</option>
+				           					<option value="tobacco">Tobacco</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>				       				
+					            </tr>
+
+					            <tr>
+					                <td>4</td>
+					                <td>Adhiya Land (Offered)</td>					              
+					                <td><select name="LandType" class="form-control beta">
+				            				<option value="ailani">Ailani</option>
+				           					<option value="adhiya">Adhiya</option>
+				           					<option value="contract">Contract(Hunda)</option>
+				           					<option value="others">Others</option>
+				       					</select>
+				       				</td>
+					                <td><div class="col-md-6"><input type="text" class="form-control"></div>
+				                		<div class="col-md-6"><select name="LandMeasurement" class="form-control beta">
+				            				<option value="bigha">Bigha</option>
+				           					<option value="ropani">Ropani</option>
+				           					<option value="squareft">Square Ft.</option>				           					
+				       					</select></div>
+					                </td>		      					      
+					                <td><input type="text" class="form-control"></td>
+					                <td>
+					                	<select name="MajorCrops" class="form-control beta">
+				            				<option value="paddy">Paddy</option>
+				           					<option value="wheat">Wheat</option>
+				           					<option value="coffee">Coffee</option>
+				           					<option value="maize">Maize</option>
+				           					<option value="millet">Millet</option>
+				           					<option value="barely">Barley</option>
+				           					<option value="sugarcane">Sugarcane</option>
+				           					<option value="tobacco">Tobacco</option>
+				           					<option value="Others">Others</option>
+				       					</select>
+				       				</td>
+				       				<td><input type="text" class="form-control"></td>
+				       				<td><input type="text" class="form-control"></td>				       				
+					            </tr>
+					        </tbody>
+					    </table>
+		   			</div>
+		   		</div>
+		   		<div class="panel-footer">
+		   			<button type="button" class="btn btn-primary btnPrevious">Back</button>
+		   			<button type="button" class="btn btn-primary" style="float: right;">Save</button>
+		   		</div>
+		   </div>
+		</div> <!--Tab8 End -->
+
+		 </div> <!--Tab content  End -->
+	</div>
+</form>
+</body>
+</html>
