@@ -1,0 +1,20 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+     $(document).ready(function(){
+
+       $(".nav-pills a").click(function(){
+           $(this).tab('show');
+        });
+
+        $(".btnNext").click(function(){
+          $('.nav-pills > .active').next('li').find('a').trigger('click');
+       });
+
+       $(".btnPrevious").click(function(){
+          $('.nav-pills > .active').prev('li').find('a').trigger('click');
+       });
+
+
+   });
+</script>

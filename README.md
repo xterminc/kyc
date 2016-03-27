@@ -3,5 +3,5 @@
 
 #Super User Credentials
 username: kyc
-password: kyc1234
+password: kyc@3321
 email: kyc@gmail.com

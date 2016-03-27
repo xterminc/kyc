@@ -1,0 +1,19 @@
+<!DOCTYPE html>{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en" xml:lang="en">
+<head>
+<title>SWBBL KYC</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- css stylesheets from bootstrap -->
+{% include 'kycform/_css.html' %}
+<!-- Javascript-->
+{% include 'kycform/_js.html' %}
+</head>
+
+<body>
+	<img src="{% static 'kycform/img/logo.png'%}" alt="Logo" align="middle" class="img-responsive" style="padding: 20px 0px 20px 400px;">
+	<h4 align="center"style="color:#337AB7;">KNOW YOUR CUSTOMER (KYC) APPLICATION FORM</h4>
+	<!-- form begins -->
+	{% include 'kycform/_form.html' %}
+</body><!-- end of body -->
+</html>
