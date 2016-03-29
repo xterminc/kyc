@@ -5,3 +5,7 @@
 username: kyc
 password: kyc@3321
 email: kyc@gmail.com
+
+username: admin
+password: admin123
+email: surfer.manoj@gmail.com
