@@ -1,2 +1,3 @@
 from django.shortcuts import render
-from .form import BranchInfoForm
+
+# Create your views here.

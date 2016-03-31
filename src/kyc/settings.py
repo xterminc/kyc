@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'branch',
     'kycform',
+    'address',
 ]
 
 MIDDLEWARE_CLASSES = [

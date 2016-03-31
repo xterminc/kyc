@@ -6,7 +6,7 @@ from .constants import BRANCHES
 class BranchInfo(TimeStampedModel):
     '''Branch Information model'''
 
-    date_info = models.DateField(auto_now=True, auto_now_add=False)
+    
     branch = models.CharField(max_length=50, choices=BRANCHES, default='baneshwor')
     center_code = models.IntegerField()
     center_name = models.CharField(max_length=100)
