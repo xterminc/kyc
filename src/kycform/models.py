@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 from django.db import models
 from core.models import TimeStampedModel
+from address.models import PermanentAddress, TemporaryAddress, MaitiAddress
 from .constants import RELATION,GENDER,MARTIAL_STATUS,RELIGION,ETHINIC_GROUP,\
 CASTE,NATIONALITY,DISTRICT,FININCIAL_INSTITUTIONS,LEVEL
 from branch.models import BranchInfo
@@ -114,6 +115,10 @@ class PersonalInfo(TimeStampedModel):
     driving_license = models.ForeignKey(DrivingLicense, on_delete=models.CASCADE)
     marriage_certificate = models.ForeignKey(MarriageCertificate, on_delete=models.CASCADE)
     electricity_bill = models.ForeignKey(ElectricityBill, on_delete=models.CASCADE,related_name='kycform_personalinfos')
+    permanent_address = models.ForeignKey(PermanentAddress, on_delete=models.CASCADE)
+    temporary_address = models.ForeignKey(TemporaryAddress, on_delete=models.CASCADE)
+    maiti_address = models.ForeignKey(MaitiAddress, on_delete=models.CASCADE)
+
 
     class Meta:
         ordering = ('first_name', )
