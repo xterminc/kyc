@@ -6,12 +6,6 @@ RELATION = (
     ('brother', 'Brother'),
 )
 
-#gender tuple
-GENDER = (
-    ('male', 'Male'),
-    ('female', 'Female'),
-    ('others', 'Others'),
-)
 
 #marital status tuple
 MARTIAL_STATUS = (
@@ -45,24 +39,10 @@ NATIONALITY = (
     ('nepali', 'Nepali'),
 )
 
-#district tuple
-DISTRICT = (
-    ('kathmandu', 'Kathmandu'),
-    ('lalitpur', 'Laltipur'),
-    ('gulmi', 'Gulmi'),
-)
 
 #finincial_institution tuple
 FININCIAL_INSTITUTIONS = (
     ('bank', 'Bank'),
     ('micro-finance', 'Micro-Finance'),
     ('co-operative', 'co-operative'),
-)
-
-#education level tuple
-LEVEL = (
-    ('slc', 'SLC'),
-    ('inter', 'Inter'),
-    ('bachelor', 'Bachelor'),
-    ('master', 'Master'),
 )

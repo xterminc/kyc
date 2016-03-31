@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'branch',
     'kycform',
     'address',
+    'familydescription',
 ]
 
 MIDDLEWARE_CLASSES = [
