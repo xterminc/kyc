@@ -212,3 +212,35 @@ ROOF_TYPE = (
     ('bush', 'Bush'),
     ('others', 'Others'),
 )
+
+
+#business category
+BUSINESS_CATEGORY = (
+    ('agriculture', 'Agriculture'),
+    ('industry', 'Industry'),
+    ('trading', 'Trading'),
+    ('services', 'Services'),
+)
+
+#vehicle type
+VEHICLE_TYPE = (
+    ('motorcycle', 'motorcycle'),
+    ('car', 'Car'),
+    ('bicycle', 'Bicycle'),
+    ('scooter', 'Scooter'),
+    ('bus','Bus'),
+    ('truck','Truck'),
+    ('others', 'others'),
+)
+
+ELECTONICE_TYPE = (
+    ('mobile', 'Mobile'),
+    ('television', 'Television'),
+    ('refrigerator', 'Refrigerator'),
+    ('others', 'Others'),
+)
+
+LOAN_TYPE = (
+    ('borrow', 'Borrow'),
+    ('lend', 'Lend'),
+)

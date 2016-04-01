@@ -41,9 +41,11 @@ INSTALLED_APPS = [
     'kycform',
     'address',
     'familydescription',
+    'incomeexpense',
     'landdetail',
     'housedetail',
     'livestock',
+
 ]
 
 MIDDLEWARE_CLASSES = [

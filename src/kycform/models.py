@@ -12,6 +12,9 @@ SpouseDrivingLicense, SpouseCitizenshipInfo, FamilyMemberInfo
 
 from landdetail.models import LandDetail
 from livestock.models import LiveStockDetail
+from housedetail.models import HouseDetail
+from incomeexpense.models import Business, Ornament, OtherAsset, Electronic, Furniture, \
+LoanDetail, AssetOnCollateral
 
 
 class CitizenshipInfo(TimeStampedModel, CitizenshipInfo):
@@ -134,7 +137,15 @@ class PersonalInfo(TimeStampedModel):
     spouse_occupation = models.ForeignKey(SpouseOccoupation, on_delete=models.CASCADE)
     family_member_info = models.ForeignKey(FamilyMemberInfo, on_delete=models.CASCADE)
     land_detail = models.ForeignKey(LandDetail, on_delete=models.CASCADE)
+    house_detail = models.ForeignKey(HouseDetail, on_delete=models.CASCADE)
     livestock_detail = models.ForeignKey(LiveStockDetail, on_delete=models.CASCADE)
+    business = models.ForeignKey(Business, on_delete=models.CASCADE)
+    ornament = models.ForeignKey(Ornament, on_delete=models.CASCADE)
+    other_asset = models.ForeignKey(OtherAsset, on_delete=models.CASCADE)
+    electronic = models.ForeignKey(Electronic, on_delete=models.CASCADE)
+    furniture = models.ForeignKey(Furniture, on_delete=models.CASCADE)
+    loan_detail = models.ForeignKey(LoanDetail, on_delete=models.CASCADE)
+    asset_on_colateral = models.ForeignKey(AssetOnCollateral, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ('first_name', )
