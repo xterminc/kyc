@@ -10,8 +10,8 @@ from branch.models import BranchInfo
 from familydescription.models import SpouseOccoupation, SpousePassportInfo, SpousePassportInfo,\
 SpouseDrivingLicense, SpouseCitizenshipInfo, FamilyMemberInfo
 
-from landdetails.models import LandDetails
-from livestock.models import LiveStockDetails
+from landdetail.models import LandDetail
+from livestock.models import LiveStockDetail
 
 
 class CitizenshipInfo(TimeStampedModel, CitizenshipInfo):
@@ -133,8 +133,8 @@ class PersonalInfo(TimeStampedModel):
     spouse_passport_info = models.ForeignKey(SpousePassportInfo, on_delete=models.CASCADE)
     spouse_occupation = models.ForeignKey(SpouseOccoupation, on_delete=models.CASCADE)
     family_member_info = models.ForeignKey(FamilyMemberInfo, on_delete=models.CASCADE)
-    land_details = models.ForeignKey(LandDetails, on_delete=models.CASCADE)
-    livestock_details = models.ForeignKey(LiveStockDetails, on_delete=models.CASCADE)
+    land_detail = models.ForeignKey(LandDetail, on_delete=models.CASCADE)
+    livestock_detail = models.ForeignKey(LiveStockDetail, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ('first_name', )

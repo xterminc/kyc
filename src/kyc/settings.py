@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'kycform',
     'address',
     'familydescription',
-    'landdetails',
+    'landdetail',
+    'housedetail',
     'livestock',
 ]
 

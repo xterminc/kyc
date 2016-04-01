@@ -5,7 +5,7 @@ from core.models import TimeStampedModel
 from core.constants import LAND_CATEGORY, LAND_MEASUREMENT, CROPS, LAND_TYPE
 
 
-class Crops(TimeStampedModel):
+class Crop(TimeStampedModel):
     crop_name = models.CharField(max_length=100, choices=CROPS, default='wheat')
     production_volume = models.DecimalField(max_digits=10, decimal_places=2, default=0.0)
     average_income = models.DecimalField(max_digits=10, decimal_places=2, default=0.0)
@@ -23,13 +23,13 @@ class LandMeasurement(TimeStampedModel):
     def __str__(self):
         return self.quantity
 
-class LandDetails(TimeStampedModel):
+class LandDetail(TimeStampedModel):
 
     land_category = models.CharField(max_length=255, choices=LAND_CATEGORY, default='farming land')
     land_type = models.CharField(max_length=100, choices=LAND_TYPE, default='others')
     total_value = models.DecimalField(default=0.0, decimal_places=2, max_digits=15)
     land_measurement = models.ForeignKey(LandMeasurement, on_delete=models.CASCADE)
-
+    crop = models.ForeignKey(Crop, on_delete=models.CASCADE)
     class Meta:
         verbose_name_plural = "Land Details"
 

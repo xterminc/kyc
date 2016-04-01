@@ -180,3 +180,35 @@ LIVESTOCKS_NAME = (
     ('fowl', 'Fowl'),
     ('others', 'Others'),
 )
+
+
+#house type tuple
+
+HOUSE_TYPE = (
+    ('pakki', 'Pakki'),
+    ('kachi', 'Kachi'),
+    ('kath', 'Kath'),
+    ('bans', 'Bans'),
+    ('fuss', 'Fuss'),
+    ('others', 'Others'),
+
+)
+
+#Material type
+MATERIAL_TYPE = (
+    ('brick', 'Brick'),
+    ('bamboo', 'Bamboo'),
+    ('stone', 'Stone'),
+    ('clay', 'Clay'),
+    ('others', 'Others'),
+)
+
+
+#Roof type
+ROOF_TYPE = (
+    ('tile', 'Tile'),
+    ('tin', 'Tin'),
+    ('cemented', 'Cemented'),
+    ('bush', 'Bush'),
+    ('others', 'Others'),
+)
