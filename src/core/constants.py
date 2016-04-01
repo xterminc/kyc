@@ -167,3 +167,16 @@ CROPS = (
     ('tobocco', 'Tobacoo'),
     ('others', 'Others'),
 )
+
+LIVESTOCKS_NAME = (
+    ('cow', 'Cow'),
+    ('buffalo', 'Buffaloes'),
+    ('ox', 'OX'),
+    ('goat', 'Goat'),
+    ('sheep', 'Sheep'),
+    ('pig', 'Pig'),
+    ('duck', 'Duck'),
+    ('hen', 'Hen'),
+    ('fowl', 'Fowl'),
+    ('others', 'Others'),
+)

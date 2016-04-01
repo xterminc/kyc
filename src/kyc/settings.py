@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'address',
     'familydescription',
     'landdetails',
+    'livestock',
 ]
 
 MIDDLEWARE_CLASSES = [

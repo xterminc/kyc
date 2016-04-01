@@ -5,11 +5,13 @@ from address.models import PermanentAddress, TemporaryAddress, MaitiAddress
 from core.constants import DISTRICTS, FAMILY_TYPE, GENDER, EDUCATION
 from .constants import RELATION,MARTIAL_STATUS,RELIGION,ETHINIC_GROUP,\
 CASTE,NATIONALITY,FININCIAL_INSTITUTIONS
+
 from branch.models import BranchInfo
 from familydescription.models import SpouseOccoupation, SpousePassportInfo, SpousePassportInfo,\
 SpouseDrivingLicense, SpouseCitizenshipInfo, FamilyMemberInfo
 
 from landdetails.models import LandDetails
+from livestock.models import LiveStockDetails
 
 
 class CitizenshipInfo(TimeStampedModel, CitizenshipInfo):
@@ -132,11 +134,11 @@ class PersonalInfo(TimeStampedModel):
     spouse_occupation = models.ForeignKey(SpouseOccoupation, on_delete=models.CASCADE)
     family_member_info = models.ForeignKey(FamilyMemberInfo, on_delete=models.CASCADE)
     land_details = models.ForeignKey(LandDetails, on_delete=models.CASCADE)
-
-
+    livestock_details = models.ForeignKey(LiveStockDetails, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ('first_name', )
+        verbose_name_plural = 'Personal Infromation'
 
     def __str__(self):
         return self.first_name + self.last_name
