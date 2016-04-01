@@ -19,15 +19,24 @@ class Address(TimeStampedModel):
 
 class PermanentAddress(Address):
 
+    class Meta:
+        verbose_name_plural = "Permanent Address"
+
     def __str__(self):
         return self.ZONES
 
 class TemporaryAddress(Address):
 
+    class Meta:
+        verbose_name_plural = "Temporary Address"
+
     def __str__(self):
         return self.zone
 
 class MaitiAddress(Address):
+
+    class Meta:
+        verbose_name_plural = "Maiti Address"
 
     def __str__(self):
         return self.zone

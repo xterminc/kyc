@@ -131,3 +131,39 @@ EDUCATION = (
     ('bachelor', 'Bachelor'),
     ('master', 'Master'),
 )
+
+#land category types
+
+LAND_CATEGORY = (
+    ('cat1', 'cat1'),
+
+)
+
+#land_type
+LAND_TYPE = (
+    ('landtype', 'landtype'),
+)
+
+#land type
+LAND_MEASUREMENT = (
+    ('square ft', 'Square Ft'),
+    ('bigha', 'Bigha'),
+    ('ropani', 'Ropani'),
+    ('katha', 'Katha'),
+    ('dhur', 'Dhur'),
+    ('aana', 'Aana'),
+)
+
+
+#crops type
+CROPS = (
+    ('wheat', 'Wheat'),
+    ('paddy', 'Paddy'),
+    ('coffee', 'Coffe'),
+    ('maize', 'Maize'),
+    ('millet', 'Millet'),
+    ('barley', 'Barley'),
+    ('sugercane', 'Sugercane'),
+    ('tobocco', 'Tobacoo'),
+    ('others', 'Others'),
+)
