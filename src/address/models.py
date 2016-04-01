@@ -1,6 +1,6 @@
 from django.db import models
 from core.models import TimeStampedModel
-from .constants import ZONES, DISTRICTS
+from core.constants import ZONES, DISTRICTS
 
 
 class Address(TimeStampedModel):
