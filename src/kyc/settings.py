@@ -29,7 +29,6 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,6 +36,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
+
+#django core apps, host common features for all custom apps
+INSTALLED_APPS += [
+    'core',
+]
+
+#project app
+INSTALLED_APPS += [
     'branch',
     'kycform',
     'address',
@@ -45,7 +53,6 @@ INSTALLED_APPS = [
     'landdetail',
     'housedetail',
     'livestock',
-
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -64,7 +71,7 @@ ROOT_URLCONF = 'kyc.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

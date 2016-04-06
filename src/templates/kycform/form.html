@@ -1,4 +1,8 @@
-<form >
+{% extends 'base.html' %}
+{% block form %}
+<form  method="POST">{% csrf_token %}
+{{ form.non_field_errors }} <!-- all forms error -->
+
 	<div class="container">
     <!-- Form header -->
 		{% include 'kycform/_form_header.html' %}
@@ -38,10 +42,6 @@
 			<!--Tab8 End -->
 
 		</div> <!--Tab content  End -->
-
-		<div class="panel-footer" align="middle" >
-			Copyright © 2016. Swabalamban Laghubitta Bikas Bank Limited | All Rights Reserved.
-		</div><!-- end footer -->
-
 	</div><!-- container end -->
 </form>
+{% endblock form %}

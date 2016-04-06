@@ -5,4 +5,4 @@ class BranchInfoForm(forms.ModelForm):
 
     class Meta:
         model = BranchInfo
-        fields = ['branch', 'center_code', 'center_name', 'group_code', 'member_code']
+        exclude = ('created_at', 'updated_at')
