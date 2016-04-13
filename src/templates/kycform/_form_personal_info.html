@@ -1,121 +1,183 @@
+{% load filters %}
+{% if personal_info_form %}
 <!--Tab2 Start Personal Info-->
   <div id="tab2" class="tab-pane fade">
     <div class="panel panel-primary" >
     <div class="panel-body">
         <div class="form-group">
-          <div class="col-md-4"><label for="fname">First Name (पहिलो नाम  )*</label><input type="text" class="form-control" placeholder=""></div>
-            <div class="col-md-4"><label for ="mname">Middle Name (बीचको नाम ) </label><input type="text" class="form-control" placeholder=""></div>
-          <div class="col-md-4"><label for ="lname">Last Name (अन्तिम अर्थात् थर) *</label><input type="text" class="form-control" placeholder=""></div>
+          <div class="col-md-4">
+            <label for="fname">First Name (पहिलो नाम  )*</label>
+            {{personal_info_form.first_name.errors}}
+            {{personal_info_form.first_name | addclass:'form-control'}}
+          </div>
+
+          <div class="col-md-4">
+            <label for ="mname">Middle Name (बीचको नाम )</label>
+            {{personal_info_form.middle_name.errors}}
+            {{personal_info_form.middle_name | addclass:'form-control'}}
+          </div>
+
+          <div class="col-md-4">
+            <label for ="lname">Last Name (अन्तिम अर्थात् थर) *</label>
+            {{personal_info_form.last_name.errors}}
+            {{personal_info_form.last_name | addclass:'form-control'}}
+          </div>
         </div>
         </div>
+        <hr>
 
         <div class="panel-body">
          <div class="form-group">
-          <div class="col-md-3"><label for="fhusband">Husband Name (पति नाम *)</label><input type="text" class="form-control" placeholder=""></div>
-          <div class="col-md-3"><label for="fhusband">Father (बाबुको नाम *)</label><input type="text" class="form-control" placeholder=""></div>
-            <div class="col-md-3"><label>Father-in-Law </label><input type="text" class="form-control" placeholder=""></div>
-          <div class="col-md-3"><label>Grand Father/Grandfather-in-law *</label><input type="text" class="form-control" placeholder=""></div>
-        </div>
-        </div>
+          <div class="col-md-3">
+            <label for="fhusband">Husband Name (पति नाम *)</label>
+            {{personal_info_form.husband_name.errors}}
+            {{personal_info_form.husband_name | addclass:'form-control'}}
+          </div>
+          <div class="col-md-3">
+            <label for="fhusband">Father (बाबुको नाम *)</label>
+            {{personal_info_form.father_name.errors}}
+            {{personal_info_form.father_name | addclass:'form-control'}}
+          </div>
 
-        <div class="panel-body">
-        <div class="form-group">
-          <div class="col-md-4"><label for ="nomineename">Beneficiary/Nominee Name*</label><input type="text" class="form-control" placeholder=""></div>
-          <div class="col-md-4"><label for ="nomineerelation">Beneficiary/Nominee Relation*</label><select name="nomineerelation" class="form-control beta">
-                  <option value="H">Husband</option>
-                  <option value="F">Father</option>
-                  <option value="M">Mother</option>
-                  <option value="B">Brother</option>
-               </select>
+          <div class="col-md-3">
+            <label>Father-in-Law </label>
+            {{personal_info_form.father_in_law_name.errors}}
+            {{personal_info_form.father_name | addclass:'form-control'}}
+          </div>
+
+          <div class="col-md-3">
+            <label>Grand Father/Grandfather-in-law *</label>
+            {{personal_info_form.grand_father_in_law_name.errors}}
+            {{personal_info_form.grand_father_in_law_name | addclass:'form-control'}}
           </div>
         </div>
         </div>
 
+        <hr>
+
       <div class="panel-body">
         <div class="form-group">
-          <div class="col-md-3"><label for="datepicker">Date Of Birth (वि.सं.मा :)*</label><input type="date" class="form-control" placeholder=""></div>
-            <div class="col-md-3"><label>Current Age</label><input type="text" class="form-control" placeholder=""></div>			 <div class="col-md-3"><label class="control-label">Gender (लिङ्ग)</label>
-            <select name="gender" class="form-control beta">
-                <option value="M">Male</option>
-                <option value="F">Female</option>
-                <option value="O">Others</option>
-             </select>
+          <div class="col-md-4">
+            <label for ="nomineename">Beneficiary/Nominee Name*</label>
+            {{personal_info_form.nominee_name.errors}}
+            {{personal_info_form.nominee_name | addclass:'form-control'}}
+          </div>
+          <div class="col-md-4">
+            <label for ="nomineerelation">Beneficiary/Nominee Relation*</label>
+            {{personal_info_form.nominee_relation.errors}}
+            {{personal_info_form.nominee_relation | addclass:'form-control'}}
+          </div>
+        </div>
+      </div>
+
+       <hr>
+
+
+      <div class="panel-body">
+        <div class="form-group">
+          <div class="col-md-3">
+            <label for="datepicker">Date Of Birth (वि.सं.मा :)*</label>
+            {{personal_info_form.dob.errors}}
+            {{personal_info_form.dob | addclass:'form-control'}}
+          </div>
+
+            <div class="col-md-3">
+              <label>Current Age</label>
+              {{personal_info_form.age.errors}}
+              {{personal_info_form.age | addclass:'form-control'}}
+            </div>
+
+            <div class="col-md-3"><label class="control-label">Gender (लिङ्ग)</label>
+              {{personal_info_form.gender.errors}}
+              {{personal_info_form.gender | addclass:'form-control'}}
          </div>
-         <div class="col-md-3"><label class="control-label">Martial Status (वैवाहिक स्थिति )</label>
-            <select name="gender" class="form-control beta">
-                <option value="M">Married</option>
-                <option value="UM">Unmarried</option>
-                <option value="W">Widow</option>
-             </select>
+         <div class="col-md-3">
+           <label class="control-label">Martial Status (वैवाहिक स्थिति )</label>
+           {{personal_info_form.marital_status.errors}}
+           {{personal_info_form.marital_status | addclass:'form-control'}}
         </div>
        </div>
     </div>
+    <hr>
 
       <div class="panel-body">
         <div class="form-group">
-          <div class="col-md-3"><label class="control-label">Religion (धर्म)</label>
-              <select name="gender" class="form-control beta">
-                  <option value="H">Hindu</option>
-                  <option value="IS">Islam</option>
-                  <option value="B">Buddhist</option>
-                  <option value="C">Christian</option>
-               </select>
+          <div class="col-md-3">
+            <label class="control-label">Religion (धर्म)</label>
+            {{personal_info_form.religion.errors}}
+            {{personal_info_form.religion | addclass:'form-control'}}
           </div>
 
-        <div class="col-md-3"><label>Ethnic Group (समूह/वर्ग)*</label><select name="district" class="form-control beta">
-                <option value="K">Bhahimin</option>
-                <option value="B">Bhaktapur</option>
-                <option value="L">Lalitpur</option>
-             </select>
+        <div class="col-md-3">
+          <label>Ethnic Group (समूह/वर्ग)*</label>
+          {{personal_info_form.ethnic_group.errors}}
+          {{personal_info_form.ethnic_group | addclass:'form-control'}}
           </div>
 
-        <div class="col-md-3"><label>Caste (जात )*</label><select name="district" class="form-control beta">
-                <option value="K">Brahimin</option>
-                <option value="B">Sudra</option>
-                <option value="L">Kasyap</option>
-             </select>
+        <div class="col-md-3">
+          <label>Caste (जात )*</label>
+          {{personal_info_form.caste.errors}}
+          {{personal_info_form.caste | addclass:'form-control'}}
            </div>
           </div>
         </div>
 
          <div class="panel-body">
-        <div class="form-group">
-          <div class="col-md-3"><label>Nationality  *</label><select name="Nationality" class="form-control beta">
-                <option value="N">Neplese</option>
-                <option value="O">Others</option>
-             </select>
-              </div>
-              <div class="col-md-3"><label>Email Address (ईमेल )</label><input type="email" class="form-control" placeholder=""></div>
-              </div>
+          <div class="form-group">
+          <div class="col-md-3">
+            <label>Nationality  *</label>
+            {{personal_info_form.nationality.errors}}
+            {{personal_info_form.nationality | addclass:'form-control'}}
+          </div>
+
+          <div class="col-md-3">
+            <label>Email Address (ईमेल )</label>
+            {{personal_info_form.email.errors}}
+            {{personal_info_form.email | addclass:'form-control'}}
+          </div>
+          </div>
       </div>
 
+    <hr>
 
       <div class="panel-body">
       <h4>Citizenship (नागरिकता)</h4>
       <div class="form-group">
-        <div class="col-md-3"><label>Citizenship No. (नागरिकता नं.)*</label><input type="text" class="form-control" placeholder=""></div>
-        <div class="col-md-3"><label>Issued From (जारी गर्ने जिल्ला) *</label><select name="district" class="form-control beta">
-                <option value="K">Kathmandu</option>
-                <option value="B">Bhaktapur</option>
-                <option value="L">Lalitpur</option>
-             </select></div>
-        <div class="col-md-3"><label>Issued Date (जारी मिति) *</label><input type="date" class="form-control"></div>
+        <div class="col-md-3">
+          <label>Citizenship No. (नागरिकता नं.)*</label>
+          {{citizenship_info_form.citizenship_no.errors}}
+          {{citizenship_info_form.citizenship_no | addclass:'form-control'}}
+        </div>
+        <div class="col-md-3">
+          <label>Issued From (जारी गर्ने जिल्ला) *</label>
+          {{citizenship_info_form.issued_from.errors}}
+          {{citizenship_info_form.issued_from | addclass:'form-control'}}
+          </div>
+        <div class="col-md-3">
+          <label>Issued Date (जारी मिति) *</label>
+          {{citizenship_info_form.issued_date.errors}}
+          {{citizenship_info_form.issued_date | addclass:'form-control'}}
+        </div>
         <div class="col-md-2"><span class="btn btn-default btn-file">Citizenship Photo (फोटो)<input type="file"></span></div>
       </div>
       </div>
+      <hr>
+
       <!--Education panel Ending -->
        <div class="panel-body">
-         <h4>Education Qualification (शैक्षिक योग्यता)</h4>
-            <div class="form-group">
-       <div class="col-md-3"><label>General </label><select name="Education" class="form-control beta">
-                <option value="N">Masters</option>
-                <option value="O">Bachlors</option>
-             </select></div>
-            <div class="col-md-3"><label>Technical </label><select name="Education" class="form-control beta">
-                <option value="M">ME/MSC/MBA/MSCIT</option>
-                <option value="O">BE/BBA/BSCCSIT/BSCIT</option>
-                <option value="O">IE</option>
-             </select>
+        <h4>Education Qualification (शैक्षिक योग्यता)</h4>
+        <div class="form-group">
+          <div class="col-md-3">
+             <label>General </label>
+             {{education_form.general.errors}}
+             {{education_form.general | addclass:'form-control' }}
+          </div>
+
+            <div class="col-md-3">
+              <label>Technical </label>
+              {{education_form.techinical.errors}}
+              {{education_form.techinical}}
+
         </div>
         </div>
         </div><!--Education panel Ending -->
@@ -202,20 +264,30 @@
 
       <div class="panel-body">
       <div class="form-group">
-      <div class="col-md-3"><span class="btn btn-default btn-file">Digital Finger Print (फोटो)<input type="file"></span></div>
-      <div class="col-md-3"><span class="btn btn-default btn-file">Digital Signature (फोटो)<input type="file"></span></div>
+      <div class="col-md-3">
+        <label>Digital Finger Print (फोटो)</label>
+          {{personal_info_form.finger_print.errors}}
+          {{personal_info_form.finger_print | addclass:'form-control'}}
+        </span>
+      </div>
+      <div class="col-md-3">
+        <label>Digital Signature (फोटो)</label>
+        {{personal_info_form.signature.errors}}
+        {{personal_info_form.signature | addclass:'form-control'}}
+        </div>
       </div>
       </div>
 
       <div class="panel-body">
     <div class="form-group">
     <div class="col-md-3"><label for="underregularmedication">Under Regular Medication*</label>
-        <label class="radio-inline"><input type="radio" name="no">No</label>
-        <label class="radio-inline"><input type="radio" name="yes">Yes (specify)</label>
-        <input type="text"class="form-control">
+      {{personal_info_form.medication.errors}}
+      {{personal_info_form.medication | addclass:'form-control'}}
     </div>
 
-    <div class="col-md-3"><label for="involvementonOtherOrganization">Involvement on Other Banks/Institutions</label><select name="otherbaks" class="form-control beta">
+    <div class="col-md-3">
+      <label for="involvementonOtherOrganization">Involvement on Other Banks/Institutions</label>
+      <select name="otherbanks" class="form-control beta">
                 <option value="CO">Co-operative</option>
                 <option value="M">Micro-Finance</option>
                 <option value="B">Bank</option>
@@ -228,5 +300,5 @@
             <button type="button" class="btn btn-primary btnNext" style="float: right;">Next</button>
           </div>
       </div>
-
-  </div> <!--Tab2 Ending -->
+</div> <!--Tab2 Ending -->
+{% endif %}

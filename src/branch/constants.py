@@ -4,4 +4,5 @@ BRANCHES = (
     ('thimi', 'Thimi'),
     ('pokhara', 'Pokhara'),
     ('tamghas', 'Tamghas'),
+    ('ghorai', 'Ghorai')
 )

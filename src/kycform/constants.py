@@ -1,9 +1,12 @@
 #relation tuple
 RELATION = (
+    ('son', 'Son'),
+    ('daughter', 'Daughter'),
     ('husband', 'Husband'),
     ('father', 'Father'),
     ('mother', 'Mother'),
     ('brother', 'Brother'),
+
 )
 
 

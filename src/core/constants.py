@@ -244,3 +244,12 @@ LOAN_TYPE = (
     ('borrow', 'Borrow'),
     ('lend', 'Lend'),
 )
+
+NOMINEE_NAME = (
+    ('husband', 'Husband'),
+    ('father', 'Father'),
+    ('mother', 'Mother'),
+    ('son', 'Son'),
+    ('daughter','Daughter'),
+    ('brother', 'Brother'),
+)

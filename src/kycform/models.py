@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 from django.db import models
 from core.models import TimeStampedModel, CitizenshipInfo, Passport, DrivingLicense
 from address.models import PermanentAddress, TemporaryAddress, MaitiAddress
-from core.constants import DISTRICTS, FAMILY_TYPE, GENDER, EDUCATION
+from core.constants import DISTRICTS, FAMILY_TYPE, GENDER, EDUCATION, NOMINEE_NAME
 from .constants import RELATION,MARTIAL_STATUS,RELIGION,ETHINIC_GROUP,\
 CASTE,NATIONALITY,FININCIAL_INSTITUTIONS
 
@@ -99,11 +99,11 @@ class PersonalInfo(TimeStampedModel):
     last_name = models.CharField(max_length=50)
     husband_name = models.CharField(max_length=100)
     father_name = models.CharField(max_length=100)
-    father_in_law_name = models.CharField(max_length=100, blank=True)
+    father_in_law_name = models.CharField(max_length=100)
     grand_father_in_law_name = models.CharField(max_length=100)
     nominee_name = models.CharField(max_length=100)
-    nominee_relation = models.CharField(max_length=7, choices=RELATION, default='husband')
-    dob = models.DateField(auto_now=True, auto_now_add=False)
+    nominee_relation = models.CharField(max_length=7, choices=RELATION, default='son')
+    dob = models.DateField()
     age = models.IntegerField()
     gender = models.CharField(max_length=6, choices=GENDER, default='female')
     marital_status = models.CharField(max_length=9, choices=MARTIAL_STATUS, default='married')
